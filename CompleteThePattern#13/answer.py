@@ -1,16 +1,16 @@
 # encode: utf-8
 '''
-1     1
- 2   2
-  3 3
-   4
-  3 3
- 2   2
-1     1
+1     1     1
+ 2   2 2   2
+  3 3   3 3
+   4     4
+  3 3   3 3
+ 2   2 2   2
+1     1     1
 '''
 
 
-def pattern(n, x=0):
+def pattern(n, x=1):
     if n < 0:
         return ""
     msg = u""
@@ -42,4 +42,4 @@ def create_str(i, n, total_white, times):
     msg += "\n"
     return msg
 
-print pattern(3, 7)
+print pattern(25)
